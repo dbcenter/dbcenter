@@ -1,0 +1,62 @@
+CREATE TABLE public."ENT013_MST"
+(
+"RECORDID" uuid NOT NULL , 
+"S13SKOD" character varying(3),
+"S13HKOD" character varying(3),
+"S13BNUM" character varying(50) NOT NULL,
+"S13SIPT" character varying(8),
+"S13TEST" character varying(8),
+"S13AKOD" character varying(2),
+"S13EHKD" character varying(2),
+"S13REFN" character varying(50),
+"S13FIRM" character varying(50),
+"S13IRSN" character varying(8),
+"S13IRST" character varying(8),
+"S13PLKA" character varying(20),
+"S13SOFOR" character varying(50),
+"S13TEL1" character varying(20),
+"S13TEL2" character varying(20),
+"S13KTIP" character varying(2),
+"S13ITAR" character varying(8),
+"S13IZMN" character varying(6),
+"UUID" uuid NOT NULL,
+"CRDATE" timestamp without time zone,
+CONSTRAINT ENT001_pkey PRIMARY KEY ("RECORDID")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."ENT013_MST"
+    OWNER to wwwwww;
+	
+CREATE TABLE public."ENT013"
+(
+"RECORDID" uuid NOT NULL ,
+"S13SKOD" character varying(3),
+"S13HKOD" character varying(3),
+"S13BNUM" character varying(50) NOT NULL,
+"S13KALN" character varying(20) NOT NULL,
+"S13AKOD" character varying(3) NOT NULL,
+"S13SIPT" character varying(8),
+"S13SKU" character varying(50) NOT NULL,
+"S13LOT" character varying(50),
+"S13FIRM" character varying(50) NOT NULL,
+"S13MIKT" integer NOT NULL,       
+"S13KTIP" character varying(5),
+"S13ITAR" character varying(8),
+"S13IZMN" character varying(6),
+"S13TMTR" character varying(8),
+"S13TMZM" character varying(6),
+"S13LOT2" character varying(50),
+"S13LOT3" character varying(50),
+"S13OSMIK" integer NOT NULL,
+"UUID" uuid NOT NULL,
+"CRDATE" timestamp without time zone,
+CONSTRAINT ENT001_pkey PRIMARY KEY ("RECORDID")
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."ENT013"
+    OWNER to wwwwww;
+
+    ///test
